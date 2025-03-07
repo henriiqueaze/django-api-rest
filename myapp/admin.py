@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Client
+
+
+@admin.register(Client)
+class ClientAdmin(admin.ModelAdmin):
+    list_display = ("name", "email", "birth_date",)
+    search_fields = ("name", "email", "birth_date",)
+    list_filter = ("name", "email", "birth_date",)
