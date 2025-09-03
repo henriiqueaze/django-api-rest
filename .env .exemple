@@ -5,6 +5,7 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 TIME_ZONE=America/Fortaleza
 
 #database
+DB_NAME=changeme
 DB_USER=changeme
 DB_PASSWORD=changeme
 DB_HOST=localhost
